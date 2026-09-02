@@ -188,7 +188,7 @@ const TicTacToeStep = ({ onComplete }: { onComplete: () => void }) => {
             setMessage("Kamu Memenangkan");
             setTimeout(() => onComplete(), 3500); // Increased timeout to wait for staggered animation
         } else if (winner === 'O' || winner === 'draw') {
-            setMessage(winner === 'draw' ? "Seri! Coba lagi yaa ❤️" : "Hampir! Sekali lagi...");
+            setMessage(winner === 'draw' ? "Seri! Coba lagi yaa❤️" : "Hampir! Sekali lagi...");
             setTimeout(() => {
                 setBoard(Array(9).fill(null));
                 setWinner(null);
